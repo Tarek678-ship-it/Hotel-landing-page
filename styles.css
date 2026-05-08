@@ -70,7 +70,7 @@
 }
 /*==================HOME SECTION=========================*/
 .Home{
-    background-image: url(/images/main\ content.jpg);
+   background-image: url(images/main\ content.jpg);
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
