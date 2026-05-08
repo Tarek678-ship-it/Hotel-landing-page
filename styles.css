@@ -1,0 +1,271 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    
+}
+/*==================NAVBAR=========================*/
+.logo a{
+    color: #C5A880;
+    font-weight: bold;
+}
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #50222D;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+.Nav-links a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20PX;
+    padding-right: 10PX;
+    color: #C5A880;
+    transition: 0.3s ease-in-out;
+
+
+}
+.Nav-links a:hover{
+    color: #F4EDE4;
+    border-bottom: 2px solid #F4EDE4;
+}
+.Nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20PX;
+    padding-right: 10PX; 
+}
+/*==================BOOKING BUTTON=========================*/
+.Booking-btn{
+  background-color: #F4EDE4;
+    color:#50222D ;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: ease-in-out 0.3s;
+
+}
+.Booking-btn:hover{
+    color: #C5A880;
+}
+
+.Book-btn{
+    background-color: #F4EDE4;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    transition: 0.3s ease-in-out;
+}
+.Book-btn:hover{
+    background-color:#50222D ;
+    color: #F4EDE4;
+    border: 2px solid #F4EDE4;
+}
+/*==================HOME SECTION=========================*/
+.Home{
+    background-image: url(/images/main\ content.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #C5A880;
+    
+}
+.Home-content{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 100px;
+/*========BOOKING BUTTON=======*/
+    
+}
+
+/*======================MEDIA QUERIES (INCOMPLETE)==========================*/
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .Navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Nav-links{
+        flex-direction: column;
+        gap: 10px;
+        padding-right: 0;
+    }
+    .Home-content{
+        padding: 50px;
+    }
+    .rooms-grid {
+        grid-template-columns: 1fr;
+    }
+     .Home-content{
+        padding: 20px;}
+/*======================ROOMS SECTION=============================*/
+}
+.rooms{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #faf7f4;
+}
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.room-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-6px);
+}
+
+.room-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.room-info {
+  padding: 16px;
+  background: #fff;
+}
+
+.room-info h3 {
+  color: #6b1a2a;
+  margin-bottom: 8px;
+}
+
+.room-info p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.price {
+  display: block;
+  font-weight: bold;
+  color: #6b1a2a;
+  margin-bottom: 12px;
+}
+
+.btn-room {
+  display: inline-block;
+  background: #6b1a2a;
+  color:#C5A880 ;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.btn-room:hover {
+ background: #8b2a3a;
+}
+html {
+scroll-behavior: smooth;
+}
+/*======================NEWS SECTION=============================*/
+.news{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #faf7f4;
+}
+.news-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 32px;
+  
+}
+.news-card{
+    border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+.news-card img{
+    width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.news-info{
+    padding: 16px;
+    background: #fff;
+}
+.news-info h3{
+   color: #6b1a2a;
+  margin-bottom: 8px ;
+}
+.news-info p{
+ font-size: 0.9rem;
+color: #555;
+margin-bottom: 12px;
+}
+
+.date{
+    display: block;
+  font-weight: bold;
+  color: #6b1a2a;
+  margin-bottom: 12px;
+}
+.btn-news{
+    display: inline-block;
+  background: #6b1a2a;
+  color:#C5A880 ;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.news-card:hover{
+    transform: translateY(-6px);
+}
+.btn-news:hover{
+    background: #8b2a3a;
+}
+/*=====================ANIMATIONS=========================*/
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Home-content h1 {
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+.Home-content p {
+  animation: fadeSlideUp 1s ease 0.3s forwards;
+  opacity: 0;
+}
+/*=====================ABOUT US SECTION (INCOMPLETE)=========================*/
+.About{
+    text-align: center;
+    padding: 50px;
+}
+/*=====================TO-DO=========================*/
+
